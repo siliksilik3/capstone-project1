@@ -1,0 +1,31 @@
+<%-include("partials/header.ejs") %>
+<main>
+  <h1 style="border-bottom: 0.1px solid rgb(165, 163, 161); order: 2; width: 50vw;">Posts</h1>
+  <% if (!posts || posts.length === 0) { %>
+    <h2>Posts not created</h2>
+  <% } else { %>
+    <% posts.forEach(post => { %>
+      <div class="post">
+        <h2 class="text"><%= post.title %></h2>
+        <p class="text"><%= post.body %></p>
+  
+        <div id="btn-post">
+          <a href="/view/<%= post.id %>">
+            <button class="c-btn">Update</button>
+          </a>
+          <form action="/delete/<%= post.id %>" method="POST">
+            <button type="submit" class="c-btn">Delete</button>
+          </form>
+        </div> 
+      </div>
+      <div class="post-separator"></div>
+    <% }) %>
+  <% } %>
+            
+</main> 
+<%-include("partials/footer.ejs") %>
+</body>
+</html>
+
+
+

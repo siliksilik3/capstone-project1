@@ -1,0 +1,17 @@
+<%-include("header.ejs") %>
+
+<main>
+  <h1 style="order: 1;">Create post</h1>
+  
+  <form action="/" method="POST" id="create" style="margin-bottom: auto; width: 100%; ">
+    <input type="text" name="title" placeholder="title" minlength="1" maxlength="100" style="width: 60%; min-width: 200px; height: 30px; margin-bottom: 10px; margin-top: 10px;"><br>
+    <textarea id="body-text" rows="10" cols="50" name="body"  style="width: 60%; min-width: 200px;"></textarea><br>
+    <!-- <input type="file" name="file" accept=".png, .jpg"><br> -->
+    <input type="submit" value="Create" class="c-btn" >
+  </form>
+
+</main>
+
+<%-include("footer.ejs") %>
+</body>
+</html>
