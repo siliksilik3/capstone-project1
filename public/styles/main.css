@@ -108,7 +108,7 @@ main{
 
 /* Crate ejs */
 :root{
-    --border-radius: 10px;
+    --border-radius: 15px;
     --btn-width: 100px;
     --background-color: rgba(212, 203, 191, 0.274);
 }
