@@ -1,0 +1,20 @@
+<%-include("header.ejs") %>
+
+<main>
+    <div id="container-reg">
+        <h1>Registration</h1>
+        <hr style="border: 1px solid black; width: 20vw;">
+        <form action="/login" method="post" id="registr">
+    <input type="text" id="login" name="login">
+    <label for="login">username</label>
+    <input type="password" name="password" id="password">
+    <label for="password">password</label>
+    <input type="submit" value="Log In" class="sub-btn">
+        </form>
+    </div>
+</main>
+
+
+<%-include("footer.ejs") %>
+</body>
+</html>
