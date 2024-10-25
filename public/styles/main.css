@@ -173,12 +173,23 @@ align-content: center;
     left: 15px;
     
 }
-#registr:hover > label{
+
+
+#registr input:focus + label,
+#registr input:valid + label {
+    bottom: 2.6rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+    transition: 0.2;
+}
+
+#registr input:invalid + label {
+    bottom: 1.7rem; 
+    background-color: transparent; 
+    transition: 0.2s;
+}
+#registr input:focus +label{
     bottom: 2.6rem;
     background-color: white;
     border-radius: var(--border-radius);
 } 
-.sub-btn:active{
-    background-color: rgb(154, 227, 154);
-}
-
