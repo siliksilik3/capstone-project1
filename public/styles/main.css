@@ -72,6 +72,7 @@ main{
     box-sizing: border-box; 
     border: 0.1px solid transparent;
     position: relative; 
+    transition: background-color 0.3s, border 0.3s;
 }
 
 .post::after {
@@ -81,10 +82,12 @@ main{
     height: 1px;
     background-color: rgb(165, 163, 161);
     margin-top: 10px; 
+    
 }
 .post:hover {
     border: 0.1px solid black;
     background-color: var(--background-color);
+    
 }
 #line{
     border-bottom: 0.1px solid rgb(165, 163, 161);  
@@ -163,13 +166,13 @@ align-content: center;
   display: flex;
   min-width: 20vw;
   width: 40vw;
-  height: 30px;
+  height: 35px;
   justify-content: center;
   align-items: center;
 }
 #registr > label{
     position: relative;
-    bottom: 1.7rem;
+    bottom: 2rem;
     left: 15px;
     
 }
@@ -177,19 +180,19 @@ align-content: center;
 
 #registr input:focus + label,
 #registr input:valid + label {
-    bottom: 2.6rem;
+    bottom: 3rem;
     background-color: white;
     border-radius: var(--border-radius);
     transition: 0.2;
 }
 
 #registr input:invalid + label {
-    bottom: 1.7rem; 
+    bottom: 2rem; 
     background-color: transparent; 
     transition: 0.2s;
 }
 #registr input:focus +label{
-    bottom: 2.6rem;
+    bottom: 3rem;
     background-color: white;
     border-radius: var(--border-radius);
 } 
