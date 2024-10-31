@@ -1,1 +1,1 @@
-That is my first petproject which one I'm moifyung step by step!
+That is my first capstone project which one I'm moifyung step by step!
